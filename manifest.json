@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "wikiswitch",
+  "version": "0.1.0",
+
+  "description": "Switch between English and Swedish wikipedia.",
+
+  "author": "Adam Nyberg",
+  "content_scripts": [
+      {
+        "run_at": "document_end",
+        "matches": ["*://*.wikipedia.org/*"],
+        "js": ["main.js"]
+      }
+    ]
+  }
